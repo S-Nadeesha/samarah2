@@ -53,7 +53,7 @@ body{
   } */
 .header-images{
     color: #fff;
-    height: 400px;
+    height: 500px;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@ body{
 }
  .header-title{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 650;
+    font-weight: 500;
     text-transform: capitalize;
     font-size: 48px;
     text-align: center;
@@ -75,7 +75,7 @@ body{
         font-size: 64px;
     }
     .header-images{
-        height: 700px;
+        height: 500px;
     }
 }
 @media(min-width:992px){
@@ -83,7 +83,9 @@ body{
         font-size: 92px;
         text-shadow: 1px 1px #ff8800 ;
     }
-
+    .header-images{
+        height: 600px;
+    }
 }
 /* header images  */
 .image1{
