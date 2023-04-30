@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMARA BANQUET HALL | HOME</title>
+    <link rel="icon" href="./logo/Untitled-2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+
+    <div class="headbar">
+        <div class="container-fluid mt-3 h-100 ">
+            <div class="row headtop ">
+                <div class="col-12">
+                    <div class="row d-flex align-content-center">
+                        <div class="offset-1 col-6 ms-sm-2 ms-md-3 ms-lg-5">
+                            <p class="hallname ">SAMARA BANQUET HALL</p>
+                        </div>
+                        <div
+                            class="col-5 d-flex pe-3 offset-lg-3 col-lg-2 align-content-center justify-content-end me-md-0 pe-md-3 pe-lg-2 me-lg-0">
+                            <div class="row menubar">
+                                <span id="menu-btn">MENU <i class="fas fa-bars"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row h-75 position-relative">
+                <div class="col-12 ">
+                    <div class="row head-div d-flex mt-3 justify-content-center align-items-center">
+                        <div class="col-12 text-center mt-3 px-5">
+                            <p class="header-title">with you in all your celebrations</p>
+                            <p class="mt-2 mb-3 header-sub">kuhvauc ayckh oiguayc</p>
+                        </div>
+                    </div>
+                    <div class="row  d-flex mt-3 justify-content-center align-items-center">
+
+                        <button class="contact-btn col-5 col-md-3">Contact Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  header swiper start -->
+    <div class="swiper header-swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide bg-black">
+                <div class="image1 header-images">
+
+                </div>
+            </div>
+
+            <div class="swiper-slide bg-black">
+                <div class="image2 header-images">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--  header swiper end -->
+    <!-- nav bar start -->
+
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn"><i class="fas fa-close"></i></span>
+        <ul class="mynavbar">
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">properties</a></li>
+            <li><a href="#">reviews</a></li>
+        </ul>
+
+    </div>
+
+    <!-- nav bar end -->
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- service section start -->
+    <section>
+        <div class="container-fluid mt-5 mb-3">
+            <div class="row ">
+                <div class="col-lg-5 col-12 px-3">
+                    <h2 class="text-center ">25 years of excellent service</h2>
+                    <p class="text-center  ">
+                        SAMARA Banquet Hall has proudly provided exceptional service for 25 years. Our commitment to
+                        excellence and attention to detail have made us one of the most sought-after event venues in the
+                        area. Our spacious and elegant halls, state-of-the-art sound system, and beautiful decor provide
+                        the perfect backdrop for any occasion.
+                    </p>
+                    <p class="text-center">
+                        Our experienced and professional event planners work tirelessly to ensure that every event is
+                        flawless, from weddings and birthdays to corporate events and conferences. Our talented chefs
+                        create delicious and personalized menus that cater to all dietary needs and preferences.
+                    </p>
+                    <p class="text-center">
+                        At SAMARA Banquet Hall, we are dedicated to making every event a memorable and enjoyable
+                        experience for our clients and their guests. We are honored to have served our community for 25
+                        years and look forward to many more years of creating unforgettable moments and memories.
+                    </p>
+                </div>
+                
+                <div class="col-lg-7 col-12">
+                    <div class="row h-100 ">
+                        <div class="col-6  d-flex align-items-center">
+                            <div class="row  justify-content-center justify-content-sm-end">
+                                <div class="col-6 col-sm-2 col-lg-6 mb-lg-3">
+                                    <img src="./images/1.jpg" class="propimg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row mb-5 ">
+                                <div class="col-2 offset-2 mb-3">
+                                    <img src="./images/2.jpg" class="propimg" alt="">
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-2 offset-2 mt-3">
+                                    <img src="./images/3.jpg" class="propimg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- service section end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/52df452c36.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script>
+
+        var swiper = new Swiper(".header-swiper", {
+            loop: true,
+            speed: 1500,
+            spaceBetween: 30,
+            effect: "fade",
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            autoplay: {
+                delay: 5000,
+            }
+        });
+
+        var swiper2 = new Swiper(".propertySwiper", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-120%", 0, -500],
+                },
+                next: {
+                    shadow: true,
+                    translate: ["120%", 0, -500],
+                },
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
