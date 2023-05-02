@@ -112,13 +112,21 @@
                         years and look forward to many more years of creating unforgettable moments and memories.
                     </p>
                 </div>
-                
+
                 <div class="col-lg-7 col-12">
                     <div class="row h-100 ">
-                        <div class="col-6  d-flex align-items-center">
-                            <div class="row  justify-content-center justify-content-sm-end">
-                                <div class="col-6 col-sm-2 col-lg-6 mb-lg-3">
-                                    <img src="./images/1.jpg" class="propimg" alt="">
+                        <div class="col-6 bg-danger  d-flex align-items-center">
+                            <div class="row swiper bg-info  propertySwiper justify-content-center justify-content-sm-end">
+                                <div class=" bg-success  swiper-wrapper col-1 ">
+                                    <div class="swiper-slide bg-secondary ">
+                                        <img src="./images/1.jpg" class="propimg " alt="">
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <img src="./images/1.jpg" class="propimg " alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/1.jpg" class="propimg " alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -134,13 +142,55 @@
                                 </div>
                             </div>
                         </div>
-                    </div>           
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <!-- service section end -->
+    <!-- photo location section start -->
+    <section>
+        <div class="container-fluid bg-secondary">
+            <div class="row">
+                <div class="col-12 justify-content-center d-flex align-items-center">
+                    <span class="fs-4 px-3">We have</span>
+                    <p class="fs-2 ">beautiful photo location</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 justify-content-center d-flex">
+                    <img src="./images/2.jpg" alt="" height="600" >
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-10 offset-1">
+                            <article>
+                                <p>Located in the heart of the city, SAMARA Banquet Hall boasts a stunning outdoor
+                                    photography location that is perfect for capturing beautiful and memorable moments.
+                                </p>
+                                <p>Our picturesque garden is adorned with lush greenery and colorful flowers, providing
+                                    the perfect backdrop for any occasion. With its tranquil and serene ambiance, the
+                                    outdoor photography location at SAMARA Banquet Hall is ideal for wedding ceremonies,
+                                    engagement photo shoots, and other special events. </p>
+                                <p>Whether you're looking to capture intimate moments or create beautiful memories with
+                                    your loved ones, our outdoor photography location is the perfect setting to make
+                                    your dreams come true. Whether you are looking for a wedding venue or a location for
+                                    a special event, SAMARA Banquet Hall is a breathtakingly beautiful setting that is
+                                    sure to provide the perfect backdrop for your photos.</p>
+                                <p>So come and explore the beauty of SAMARA Banquet Hall's outdoor photography location,
+                                    and let us help you make your special day even more unforgettable.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- photo location section end -->
+    <!-- wedding memories section start -->
+    
+    <!-- wedding memories section end -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -162,20 +212,19 @@
             }
         });
 
-        var swiper2 = new Swiper(".propertySwiper", {
-            grabCursor: true,
-            effect: "creative",
-            creativeEffect: {
-                prev: {
-                    shadow: true,
-                    translate: ["-120%", 0, -500],
-                },
-                next: {
-                    shadow: true,
-                    translate: ["120%", 0, -500],
-                },
-            },
-        });
+        var swiper = new Swiper(".propertySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      grabCursor: true,
+      slidesPerView: 1,
+            spaceBetween: 60,
+    });
 
     </script>
 

@@ -198,3 +198,13 @@ body{
         height: 14rem;
     }
 }
+.propertySwiper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.propertySwiper .swiper-slide{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
