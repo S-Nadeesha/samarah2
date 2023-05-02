@@ -115,10 +115,11 @@
 
                 <div class="col-lg-7 col-12">
                     <div class="row h-100 ">
-                        <div class="col-6 bg-danger  d-flex align-items-center">
-                            <div class="row swiper bg-info  propertySwiper justify-content-center justify-content-sm-end">
-                                <div class=" bg-success  swiper-wrapper col-1 ">
-                                    <div class="swiper-slide bg-secondary ">
+                        <div class="col-6   d-flex align-items-center">
+                            <div dir="rtl"
+                                class="row swiper   propertySwiper justify-content-center justify-content-sm-end">
+                                <div class="   swiper-wrapper  ">
+                                    <div class="swiper-slide">
                                         <img src="./images/1.jpg" class="propimg " alt="">
                                     </div>
                                     <div class="swiper-slide ">
@@ -131,14 +132,30 @@
                             </div>
                         </div>
                         <div class="col-6 ">
-                            <div class="row mb-5 ">
-                                <div class="col-2 offset-2 mb-3">
-                                    <img src="./images/2.jpg" class="propimg" alt="">
+                            <div class="row mb-5 swiper   propertySwiper">
+                                <div class="col-2 offset-2 mb-3 swiper-wrapper ">
+                                    <div class="swiper-slide">
+                                        <img src="./images/3.jpg" class="propimg " alt="">
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <img src="./images/3.jpg" class="propimg " alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/3.jpg" class="propimg " alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row mt-5">
-                                <div class="col-2 offset-2 mt-3">
-                                    <img src="./images/3.jpg" class="propimg" alt="">
+                            <div class="row mt-5 swiper   propertySwiper">
+                                <div class="col-2 offset-2 mt-3 swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/2.jpg" class="propimg " alt="">
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <img src="./images/2.jpg" class="propimg " alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/2.jpg" class="propimg " alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -151,16 +168,31 @@
     <!-- service section end -->
     <!-- photo location section start -->
     <section>
-        <div class="container-fluid bg-secondary">
+        <div class="container-fluid bg-dark text-light">
             <div class="row">
                 <div class="col-12 justify-content-center d-flex align-items-center">
-                    <span class="fs-4 px-3">We have</span>
+                    <span class="fs-4 px-3 ">We have</span>
                     <p class="fs-2 ">beautiful photo location</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 justify-content-center d-flex">
-                    <img src="./images/2.jpg" alt="" height="600" >
+                <div class="col-12 col-md-6 justify-content-end d-flex">
+                    <!-- <img src="./images/2.jpg" alt="" height="600" > -->
+                    <div class="swiper mySwiper4">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide swiper-slide2">
+                                <img src="./images/2.jpg" alt="" class="photo-location">
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <img src="./images/2.jpg" alt="" class="photo-location">
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <img src="./images/2.jpg" alt="" class="photo-location">
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 ">
                     <div class="row h-100 align-items-center">
@@ -189,7 +221,7 @@
     </section>
     <!-- photo location section end -->
     <!-- wedding memories section start -->
-    
+
     <!-- wedding memories section end -->
 
 
@@ -213,18 +245,32 @@
         });
 
         var swiper = new Swiper(".propertySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      grabCursor: true,
-      slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                // type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            grabCursor: true,
+            slidesPerView: 1,
             spaceBetween: 60,
-    });
+            loop: true,
+        });
+
+        var swiper = new Swiper(".mySwiper4", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+                loop:true,
+            });
+
 
     </script>
 

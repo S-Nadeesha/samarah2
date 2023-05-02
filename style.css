@@ -191,14 +191,14 @@ body{
 }
 
 .propimg{
-    height: 10rem;
+    height: 10rem !important;
 }
 @media(min-width:768px){
     .propimg{
-        height: 14rem;
+        height: 14rem !important;
     }
 }
-.propertySwiper{
+/* .propertySwiper{
     display: flex;
     justify-content: end;
     align-items: center;
@@ -207,4 +207,15 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
-}
+} */
+.swiper-slide2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .photo-location{
+    height: 28rem !important;
+  }
